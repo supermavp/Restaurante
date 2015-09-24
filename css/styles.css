@@ -1,0 +1,23 @@
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background-image: url("../img/ss.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+header{
+	color: white;
+}
+
+.link {
+	display: inline;
+	padding: 6px 12px;
+	clear: both;
+}
+
+#mostrarImg {
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
