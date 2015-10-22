@@ -8,7 +8,7 @@ $(function() {
     	$("#telefono").val(" ");      
         $.ajax({
         	type: "POST",
-            url: "conecta.php",
+            url: "192.168.0.1/servidor/conecta.php",
             data: ({name: elNombre,mail: elMail,telefono: elTelefono}),
             cache: false,
             dataType: "text",
