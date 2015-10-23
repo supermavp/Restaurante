@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget 
+	xmlns="http://www.w3.org/ns/widgets"
+	xmlns:gap="http://phonegap.com/ns/1.0"
+	id="com.phonegap.appRestaurante"
+	version="1.0.0">
+
+	<name>AppRestaurante</name>
+
+	<description>
+		Una aplicacion para el pedido OnSite de un negocio, en este caso de prueba para una Pizzeria.
+	</description>
+
+	<author email="mavega998@misena.edu.co">
+		Michael Vega - Henry Perez
+	</author>
+</widget>
