@@ -21,3 +21,7 @@ header{
     padding-left: 50px;
     padding-bottom: 30px;
 }
+
+table tr td {
+    padding: 2px;
+}

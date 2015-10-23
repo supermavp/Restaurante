@@ -1,15 +1,20 @@
 $(function() {
 	$("#enviadatos").click(function() {
-		var elNombre = $("#nombre").val();
-    	var elMail = $("#mail").val();
-    	var elTelefono = $("#telefono").val();
-		$("#nombre").val(" ");
-    	$("#mail").val(" ");
-    	$("#telefono").val(" ");      
+
+        var laMesa = $("#mesa").val();
+		var elPlato = $("#plato").val();
+    	var laCantidad = $("#cantidad").val();
+    	var elPrecio = $("#precio").val();
+		
+        $("#plato").val(" ");
+    	$("#cantidad").val(" ");
+    	$("#precio").val(" ");      
+        $("#mesa").val(" ");
+
         $.ajax({
         	type: "POST",
             url: "192.168.0.11/servidor/conecta.php",
-            data: ({name: elNombre,mail: elMail,telefono: elTelefono}),
+            data: ({mesa:laMesa,plato: elPlato,cantidad: laCantidad,precio: elPrecio}),
             cache: false,
             dataType: "text",
             success: onSuccess
