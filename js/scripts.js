@@ -50,7 +50,19 @@ function enviarDatos(){
 
         alert("Mesa: "+miMesa+"\nPrecio: $"+miPrecio+"\nPlato: "+miPlato+"\nCantidad: "+miCant);
         
-        var miJSON = JSON.encode()
+        var miJSON = JSON.encode(miPedido);
+        var miAjax = new Request({
+            url: "localhost/servidor/conexion.php",
+            data: "datos="+miJSON,
+            onSuccess: function(resp){
+                alert(resp);
+            },
+            onFailure: function(){
+                alert("Fallo la conexion");
+            }
+        });
+
+        miAjax.send();
     }
 
     limpiar();
