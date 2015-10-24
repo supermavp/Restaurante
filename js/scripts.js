@@ -49,8 +49,8 @@ function enviarDatos(){
         var miCant = miPedido[2];
 
         alert("Mesa: "+miMesa+"\nPrecio: $"+miPrecio+"\nPlato: "+miPlato+"\nCantidad: "+miCant);
-        
-        var miJSON = JSON.encode(miPedido);
+        var datos = [[miMesa,miPlato,miPrecio,miCant]];
+        var miJSON = json_encode(datos);
         var miAjax = new Request({
             url: "localhost/servidor/conexion.php",
             data: "datos="+miJSON,
